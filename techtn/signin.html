@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\\techtn\\signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>signup</title>
+</head>
+<body>
+    <div class="signin_section">
+       
+       <form action="">
+            <h2>Sign up :</h2> 
+            <div class="sur_name">
+                <label for="surname" class="Txt">name : </label>
+                <input type="text" required id="surname" placeholder="username ">
+            </div>
+            <div class="famName" >
+                <label for="fam_name" class="Txt">Password : </label>
+                
+                <input type="password" id="fam_name" required placeholder="password">
+                <span id="sign_span"></span>
+                <div class="psstxt">
+                    <p>show password</p><input type="checkbox" id="chek">
+                </div>
+                <script>
+                    chek.onclick=togglepassword;
+                    function togglepassword(){
+                        if(chek.checked) fam_name.type="text";
+                        else fam_name.type="password";
+                    }
+                    
+                </script>
+            </div>
+            <div class="adresse">
+                <label for="adr" class="Txt">adresse : </label>
+                <input type="text" id="adr" required placeholder="adresse">
+            </div>
+            <div class="telephone" >
+                <label for="tel" class="Txt">phone number : </label>
+                <input id="tel" type="tel" required minlength="8" maxlength="8" placeholder="phone number" >
+            </div>
+            <div class="email">
+                <label for="mail" class="Txt">email : </label>
+                <input type="email" required id="mail" placeholder="email">
+            </div>
+            <div class="Gender">
+                    
+                <input type="radio" name="gender"  id="mal">
+                <label for="mal" class="Txt">male</label>
+                <input type="radio" name="gender"  id="fem">
+                <label for="fem" class="Txt">female</label>
+            </div>
+            <div class="submit">
+                <input type="submit" value="submit" id="btn1">
+                <input type="reset" value="reset" id="btn2">
+            </div>
+            <div class="signup">have an account ?<span>  </span> <a href="C:\\techtn\\login.html">Log in</a></div>
+                
+        </form>
+        
+       
+
+    </div>
+    <script src="C:\\techtn\\main.js"></script>
+</body>
+</html>

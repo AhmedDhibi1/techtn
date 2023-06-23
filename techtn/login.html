@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:\\techtn\\login.css">
+    <title>login</title>
+</head>
+<body>
+    <form action="" class="square">
+        <i style="--clr:#fff;"></i>
+        <i style="--clr:#ff0000;"></i>
+        <i style="--clr:#ff0000;"></i>
+        <div class="login">
+            <h2>Login</h2>
+            <div class="inputbx" >
+                <input type="text" placeholder="username" required id="name">
+            </div>
+            <div class="inputbx" id="bpx-pass">
+                <input type="password" placeholder="Password" id="pss" required>
+                <span></span>
+                <div class="psstxt">
+                    <p>show password</p><input type="checkbox" id="chek">
+                </div>
+                <script>
+                    chek.onclick=togglepassword;
+                    function togglepassword(){
+                        if(chek.checked) pss.type="text";
+                        else pss.type="password";
+                    }
+                    
+                </script>
+                
+            </div>
+            <div class="inputbx">
+                <input type="submit" value="Sign in" id="sub">
+            </div>
+            <div class="links">
+                <a href="#">Forget Password ?</a>
+                <a href="C:\\techtn\\signin.html">Sign up</a>
+            </div>
+        </div>
+    </form>
+    <script src="C:\\techtn\\main.js"></script>
+</body>
+</html>

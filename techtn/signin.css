@@ -1,0 +1,180 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    
+    color:white ;
+}
+body {
+    display:block;
+    /*background-color: #051c24;*/
+    background: linear-gradient(45deg,#1f2126,#1f2126,#ff0000);
+}
+
+.signin_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+h2 {
+    display: flex;
+    color:#ff0000;
+    /*position: relative;*/
+    font-size: 50px;
+   /* margin-left: 200px;
+    margin-top: 1;*/
+    /*padding-top: 40px;*/
+    margin-top: -10px;
+    margin-bottom: -5px;
+    
+    justify-content:center;
+    align-items: center;
+    
+}
+.signin_section form {
+    display: flexbox;
+    flex-direction: row;
+    align-content: center;
+    
+    border: 1px solid white;
+    background:linear-gradient(45deg,#ff0000,#1f2126,#1f2126);
+    
+    padding: 10px;
+    width: 600px;
+    height: 650px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    
+}
+.sur_name , .famName, .adresse, .telephone, .email, .Gender {
+    display: flexbox;
+    align-content: flex-start;
+    justify-content:space-between;
+}
+.Txt {
+    display: inline-block;
+    width:220px;
+    color: #f5f0f5f0 ;
+    font-size:25px;
+    
+}
+
+
+#surname , #fam_name,  #adr,  #tel, #mail {
+    width: 300px;
+    height: 40px;
+    /*margin-left: 150px;*/
+    border:2px solid white;
+    
+    font-size: 1.2em;
+    background:transparent;
+    margin-top: 15px;
+    border-radius: 30px;
+    color: #fff;
+    position: relative;
+    
+   
+    background:transparent;
+    
+    
+    padding: 0px 12px;
+    box-shadow: none;
+    outline: none;
+
+}
+.Gender {
+    margin-top: 30px;
+    
+}
+.submit {
+    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: space-between;
+}
+#btn1 , #btn2 {
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #04f7de;
+    box-shadow: 2.1px 2.1px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    
+    border-radius: 20px;
+
+}
+#btn1 {
+    margin-right: 15px;
+}
+#btn2 {
+    margin-left: 15px;
+}
+#btn1:hover {
+    background-color:rgb(9, 189, 9);
+    color: white;
+}
+#btn2:hover {
+    background-color: red;
+    color: white;
+}
+#surname:current /*, #fam_name:,  #adr:focus,  #tel:focus, #mail:focus*/ {
+    border: 0.5px rgb(9, 189, 9) ;
+} 
+.signup {
+    text-decoration: none;
+}
+.signup {
+    display: inline-block;
+    width:600px;
+    color: #f5f0f5f0 ;
+    font-size:25px;
+    text-align: center;
+    margin-top: 40px;
+}
+.psstxt {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /*font-size: 15px;*/
+    font-weight: 100;
+    padding-top: 5px;
+    
+}
+p {
+    display:block;
+    width: 150px;
+    margin-left: 20px;
+}
+    
+    
+.famName input:focus .wrong {
+    display: block;
+    border-color: #ff0000;
+}
+
+.correct {
+    display: block;
+    border-color: green;
+}
+
+.famName span {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 100;
+    font-size: 11px;
+    padding-top: 6px;
+    color: #fff;
+}
+
+.wrongpass:focus {
+    color: #ff0000;
+}
+
+.correctpass:focus {
+    color: green;
+}
